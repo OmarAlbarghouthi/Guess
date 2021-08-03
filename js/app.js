@@ -1,7 +1,10 @@
 'use strict';
+
 let fullName = prompt('Enter your name please');
 alert('Hello ' + fullName + ' welcome to my website');
 console.log(fullName);
+let score = 0;
+
 
 let myName = prompt('Is my name Omar?').toLowerCase();
 
@@ -11,8 +14,14 @@ if (myName === 'yes') {
     // console.log('Correct, good job');
     alert('Correct, good job');
     console.log('Correct');
+    score+=1;
+    
+    
 
 }
+
+
+
 else if(myName === 'no'){
     // console.log('Ooops, it is not correct');
     alert('Ooops, it is not correct');
@@ -31,8 +40,12 @@ else if(myAge === 'no'){
     // console.log('Correct, good job');
     alert('Correct, good job');
     console.log('Correct');
+    score+=1;
+    
 
 }
+
+
 else{
     // console.log('Ooops, it is not correct');
     alert(' Enter a valid value');
@@ -42,10 +55,12 @@ let myEducation = prompt('Do you think i am still studying in college?').toLower
 
 if(myEducation === 'yes'){
     // myEducation = myEducation.toLowerCase();
-    
+
     alert('Correct, good job');
     console.log('Correct, good job');
+    score+=1;
     
+
 }
 else if(myEducation === 'no'){
     // console.log('Ooops, it is not correct');
@@ -60,9 +75,11 @@ let myFavFood = prompt('Is it my favorite Mansaf?').toLowerCase();
 
 if(myFavFood === 'yes'){
     // myFavFood = myFavFood.toLowerCase();
-    
+
     alert('Correct, good job');
     console.log('Correct, good job');
+    score+=1;
+    
 }
 else if(myFavFood === 'no'){
     // console.log('Ooops, it is not correct');
@@ -79,16 +96,80 @@ if(myHobbie === 'yes'){
 }
 else if(myHobbie === 'no'){
     // myHobbie = myHobbie.toLowerCase();
-    
+
     alert('Correct, good job');
     console.log('Correct, good job');
+    score += 1;
+    
 }
 else{
     // console.log('Ooops, it is not correct');
     alert(' Enter a valid value');
 }
 
+let guess;
+alert('Lest\'s play a guess game together');
 
+
+for(let i = 0; i < 4 ; i++){
+
+
+    guess = Number(prompt('What do you think my Favorit number?'));
+
+    if(guess === 4) {
+        alert(' Good job, ' + guess + ' is the correct answer');
+        score +=1;
+        break;
+
+    }
+
+    else if(guess > 4){
+        alert('Too high');
+    }
+
+    else if (guess < 4){
+        alert('Too low');
+    }
+
+
+
+}
+alert('The correct answer is 4 ' );
+
+
+
+let myFavMovie = ['Fast and furious', 'Titanic', 'Avatar', 'Dumb And Dumber', 'The Karate Kid', 'Doom '];
+
+for(let z = 0; z < 6; z++){
+
+    let userAnswer = prompt('What is my favorite movie? ');
+
+    let w;
+
+    for(w = 0; w < myFavMovie.length; w++){
+        if(userAnswer === myFavMovie[w]){
+
+            alert('Nice, it\'s correct');
+            console.log('Correct' + userAnswer);
+            score += 1;
+            break;
+        }
+        
+    }
+    if(userAnswer === myFavMovie){
+        break;
+
+    }
+    else{
+        alert('Your answer not correct');
+
+    }
+
+
+}
+alert('The correct answers are (Fast and furious, Titanic, Avatar, Dumb And Dumber, The Karate Kid, Doom )');
+
+alert('Your score is ' + score + 'out of 7');
 
 
 
