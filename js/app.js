@@ -5,7 +5,7 @@ alert('Hello ' + fullName + ' welcome to my website');
 console.log(fullName);
 let score = 0;
 
-
+function myName(){
 let myName = prompt('Is my name Omar?').toLowerCase();
 
 if (myName === 'yes') {
@@ -22,6 +22,8 @@ if (myName === 'yes') {
 
 
 
+
+
 else if(myName === 'no'){
     // console.log('Ooops, it is not correct');
     alert('Ooops, it is not correct');
@@ -29,7 +31,10 @@ else if(myName === 'no'){
 else{
     alert('enter avalid value');
 }
+}
+myName();
 
+function myAge(){
 let myAge = prompt('Am i 20 years old?').toLowerCase();
 if(myAge === 'yes'){
     alert('incorrect ');
@@ -50,6 +55,10 @@ else{
     // console.log('Ooops, it is not correct');
     alert(' Enter a valid value');
 }
+}
+myAge();
+
+function myEducation(){
 
 let myEducation = prompt('Do you think i am still studying in college?').toLowerCase();
 
@@ -70,6 +79,10 @@ else{
     // console.log('Ooops, it is not correct');
     alert(' Enter a valid value');
 }
+}
+myEducation();
+
+function myFavFood(){
 
 let myFavFood = prompt('Is it my favorite Mansaf?').toLowerCase();
 
@@ -89,6 +102,10 @@ else{
     // console.log('Ooops, it is not correct');
     alert(' Enter a valid value');
 }
+}
+myFavFood();
+
+function myHobbie(){
 
 let myHobbie = prompt('Do you think that my favorite hobbie is Volleyball?').toLowerCase();
 if(myHobbie === 'yes'){
@@ -106,6 +123,10 @@ else{
     // console.log('Ooops, it is not correct');
     alert(' Enter a valid value');
 }
+}
+myHobbie();
+
+function guess(){
 
 let guess;
 alert('Lest\'s play a guess game together');
@@ -134,10 +155,12 @@ for(let i = 0; i < 4 ; i++){
 
 
 }
+}
+guess();
 alert('The correct answer is 4 ' );
 
 
-
+function myFavMovie(){
 let myFavMovie = ['Fast and furious', 'Titanic', 'Avatar', 'Dumb And Dumber', 'The Karate Kid', 'Doom '];
 
 for(let z = 0; z < 6; z++){
@@ -167,6 +190,8 @@ for(let z = 0; z < 6; z++){
 
 
 }
+}
+myFavMovie();
 alert('The correct answers are (Fast and furious, Titanic, Avatar, Dumb And Dumber, The Karate Kid, Doom )');
 
 alert('Your score is ' + score + 'out of 7');
