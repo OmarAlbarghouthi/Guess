@@ -4,6 +4,7 @@ body{
 
 h1{
     text-align: center;
+    font-size: 30px;
 }
 
 p{
@@ -20,5 +21,26 @@ li{
     color: beige;
     text-align:center;
     background-image: url(https://i.pinimg.com/originals/9a/ff/09/9aff09c520b2a45a97fe411be60b2acd.jpg);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    font-family: 'Oswald', sans-serif;
 }
+
+div{
+    text-align: center;
+    color: burlywood;
+    width: 10px;
+}
+
+#contactUs{
+    text-align:center;
+    position: relative;
+    background-color:rgb(198, 152, 240);
+    width: 50px;
+    height: 50px;
+    color: blueviolet;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
